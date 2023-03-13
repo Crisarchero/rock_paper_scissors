@@ -1,0 +1,15 @@
+{
+  "name": "rock_paper_scissors",
+  "version": "1.0.0",
+  "description": "A game of rock paper scissors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "rock_paper_scissors"
+  },
+  "author": "Janell Brown",
+  "license": "ISC"
+}
