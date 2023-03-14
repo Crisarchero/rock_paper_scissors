@@ -1,0 +1,156 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    border: solid white 2px;
+    box-shadow: 0px 0px 7px #d500ff inset, 0px 0px 7px #d500ff inset, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff;
+    background: black;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+h1 {
+    color: white;
+    text-shadow: 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 15px #d500ff;
+    font-size: 5em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    border: white 2px solid;
+    box-shadow: 0px 0px 7px #d500ff inset, 0px 0px 7px #d500ff inset, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 30px #d500ff, 0px 0px 20px #d500ff inset;
+
+}
+
+.title-section {
+    height: 20%;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    text-shadow: 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 15px #d500ff;
+}
+
+.both-scores {
+    margin-top: 10px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10%;
+}
+
+.score {
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+    border: solid white 2px;
+    width: 30%;
+    box-shadow: 0px 0px 7px #d500ff inset, 0px 0px 7px #d500ff inset, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 50px #d500ff, 0px 0px 20px #d500ff inset;
+    text-align: center;
+    text-shadow: 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 15px #d500ff;
+}
+
+.game-arena {
+    height: 80%;
+    width: 100%;
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button:hover {
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+button:hover figcaption {
+    opacity: 1;
+   
+}
+
+
+
+.play-button {
+    width: 50%;
+    font-size: 1.5em;
+    color: white;
+    border: solid white 1px;
+    padding: 1%;
+    text-align: center;
+    box-shadow: 0px 0px 7px #d500ff inset, 0px 0px 7px #d500ff inset, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff;
+    text-shadow: 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 15px #d500ff;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.select {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap:50px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    height: 60%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+
+.select button {
+    width: 14em;
+    height: 14em;
+    background-color: black;
+    border:0;
+    
+}
+
+.select figure {
+    width: 14em;
+    height: 14em;
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 15px #d500ff;
+}
+
+.select figcaption {
+    font-size: 1.5em;
+    opacity: 0;
+}
+
+.select img {
+    width: 100%;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+        <div class="title-section">
+
+            <h2>Rock, Paper, Scissors...</h2>
+            <div class="both-scores">
+                <div class="score">
+                    <h3>You:</h3>
+                    <span id = "player-points">0</span>
+                </div>
+                <div class="score">
+                    <h3>The Enemy:</h3>
+                    <span id = "cpu-points">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="game-arena">
+
+            <div class="select">
+                <button id = "rock" onclick = "select('rock')">
+
+                    <figure>
+                        <img src="images/rock.png" alt="paper">
+                        <figcaption>Rock</figcaption>
+                    </figure>
+                </button>
+                <button id = "paper" onclick = "select('paper')">
+
+                    <figure>
+                        <img src="images/paper.png" alt="paper">
+                        <figcaption>Paper</figcaption>
+                    </figure>
+                </button>
+                <button id = "scissors" onclick = "select('scissors')">
+
+                    <figure>
+                        <img src="images/scissors.png" alt="paper">
+                        <figcaption>Scissors</figcaption>
+                    </figure>
+                </button>
+            </div>
+
+            <button onclick = battle() class="play-button">Shoot!</button>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
