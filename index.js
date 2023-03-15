@@ -9,7 +9,7 @@ let clickSound = new Audio('sounds/softClick.mp3')
 let goClick = new Audio('sounds/goClick.mp3')
 let lossSound = new Audio('sounds/loss.mp3')
 let victorySound = new Audio('sounds/victory.mp3')
-let neonHum = new Audio('sounds/power-buzz-sfc.mp3')
+
 
 
 //Grabbing html elements.
@@ -32,7 +32,8 @@ play.addEventListener("click", battle)
 
 //The beginning animation
 tl.to('header', { duration: 3, y: '-155%' }, 2)
-    .to('main', { duration: 0.5, opacity: 1 });
+    .to('main', { duration: 0.5, opacity: 1 })
+    .set('header', {visibility:'hidden'});
 
 gsap.to('.pulse',
     {

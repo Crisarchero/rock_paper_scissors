@@ -21,8 +21,7 @@ body {
     align-items: center;
     background-color: black;
     padding: 20px;
-    height: 100vh;
-    height: 100svh;
+   
     overflow-x:hidden;
 }
 
@@ -34,8 +33,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    height: 100svh;
+    height: 100%;
     background: black;
 
 }
@@ -57,10 +55,9 @@ main {
     justify-content: space-between;
     padding: 5%;
     width: 95%;
-    height: 95vh;
-    height: 95svh;
-    align-items: center;
+    height: 95%;
 
+    align-items: center;
 }
 
 
@@ -92,9 +89,10 @@ h2 {
 
 /*The area where the player makes selections and seees the result of the game*/
 .game-arena {
+
     height: 80%;
     width: 100%;
-    padding: 1em 5%;
+    padding: 5% 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,6 +122,7 @@ button:hover figcaption {
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+    margin:2%;
 }
 
 /*Changing the scrollbar*/
@@ -187,11 +186,9 @@ button:hover figcaption {
     width: 100%;
     font-size: 1.5em;
     color: white;
-  
     z-index:4;
     padding: 1%;
     text-align: center;
-   
     text-shadow: 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff, 0px 0px 15px #d500ff;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -201,25 +198,27 @@ button:hover figcaption {
 #showdown {
     position: absolute;
     text-align:center;
-    padding: 50px;
-    width: 100%;
+    padding: 10px;
+    width: 80%;
     z-index: 1;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-around;
     opacity: 0;
     z-index: 2;
-
+  
 
 }
 #showdown h2 {
     padding:5px;
 }
-
+#showdown div{
+    width:50%;
+}
 
 #showdown img {
-    width: 14em;
-    height: 14em;
+    width: 10em;
+    height: 10em;
 }
 
 /*The end results screen*/
@@ -227,8 +226,8 @@ button:hover figcaption {
     text-align: center;
     
     min-width:50%;
-    margin:1em 0.2em;
-    padding: 1em 0.2em;
+    margin:1% 0.2%;
+    padding: 1% 0.2%;
     position: absolute;
     justify-self:center;
     z-index: 1;
@@ -246,4 +245,28 @@ button:hover figcaption {
 .neon-border{
     border:solid white 3px;
     box-shadow: 0px 0px 7px #d500ff inset, 0px 0px 7px #d500ff inset, 0px 0px 7px #d500ff, 0px 0px 7px #d500ff;
+}
+
+/*media queries*/
+
+@media (max-width: 500px){
+
+    #showdown{
+        width:50%;
+        flex-direction:column;
+    }
+    #results span{
+        font-size:4.5em;
+    }
+    body{
+        height:200vh;
+    }
+  
+}
+
+@media(min-width:600px) and (min-height:400px){
+    body{
+        height: 100vh;
+        height: 100svh;
+    }
 }
