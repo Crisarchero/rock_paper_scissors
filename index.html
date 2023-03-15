@@ -9,43 +9,46 @@
 </head>
 
 <body>
-
-    <header>
+    <audio controls autoplay loop>
+        <source src = "" type = "audio/mp3">
+    </audio>
+    <header class = "neon-border">
         <h1>Rock, Paper, Scissors</h1>
     </header>
-    <main>
+    <main class = "neon-border pulse">
         <div class="title-section">
 
             <h2>Rock, Paper, Scissors...</h2>
             <div class="both-scores">
-                <div class="score">
+                <div class="score neon-border pulse">
                     <h3>You:</h3>
-                    <span id = "player-points">0</span>
+                    <span id="player-points">0</span>
                 </div>
-                <div class="score">
-                    <h3>The Enemy:</h3>
-                    <span id = "cpu-points">0</span>
+                <div class="score neon-border pulse">
+                    <h3>Foe:</h3>
+                    <span id="cpu-points">0</span>
                 </div>
             </div>
         </div>
         <div class="game-arena">
 
-            <div class="select">
-                <button id = "rock" onclick = "select('rock')">
+            <div id = "select-menu" class="select">
+                <button id="rock" onclick="select('rock')">
 
                     <figure>
                         <img src="images/rock.png" alt="paper">
                         <figcaption>Rock</figcaption>
                     </figure>
                 </button>
-                <button id = "paper" onclick = "select('paper')">
+                <button id="paper" onclick="select('paper')">
 
                     <figure>
                         <img src="images/paper.png" alt="paper">
                         <figcaption>Paper</figcaption>
                     </figure>
                 </button>
-                <button id = "scissors" onclick = "select('scissors')">
+
+                <button id="scissors" onclick="select('scissors')">
 
                     <figure>
                         <img src="images/scissors.png" alt="paper">
@@ -53,8 +56,29 @@
                     </figure>
                 </button>
             </div>
+            <div id="showdown">
 
-            <button onclick = battle() class="play-button">Shoot!</button>
+                <div>
+                    <h2>You</h2>
+                    <figure>
+                        <img id = "player-choice" src="images/scissors.png" alt="paper">
+                    </figure>
+                </div>
+
+                <div>
+                    <h2 class = "text-right">
+                        Foe
+                    </h2>
+                    <figure>
+                        <img id = "cpu-choice" src="images/scissors.png" alt="paper">
+                    </figure>
+                </div>
+            </div>
+            <div id="results" class = "neon-border pulse">
+                <span id = "match-results"></span> 
+            </div>
+        
+            <button id = "play-button" class="play-button neon-border greater-pulse">Shoot!</button>
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
