@@ -118,7 +118,7 @@ button:hover figcaption {
     z-index: 3;
     align-items: center;
     justify-content: space-around;
-    height: 80%;
+    min-height: 250px;
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -206,9 +206,8 @@ button:hover figcaption {
     justify-content: space-around;
     opacity: 0;
     z-index: 2;
-  
-
 }
+
 #showdown h2 {
     padding:5px;
 }
@@ -255,8 +254,11 @@ button:hover figcaption {
         width:50%;
         flex-direction:column;
     }
+    #results{
+        width:70%;
+    }
     #results span{
-        font-size:4.5em;
+        font-size:4em;
     }
     body{
         height:200vh;
