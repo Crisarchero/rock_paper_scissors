@@ -4,6 +4,9 @@ This is a simple rock paper scissors minigame.  You will choose a weapon, then t
 ## Development
 I created this game with HTML/CSS, JS and GSAP in about 8 hours.
 
+## Contributions
+This project is just for me to practice.  No contributions, please!
+
 ## Acknowledgments
 All the sound effects are from pixabay.com and don’t belong to me but are free to use.
 
