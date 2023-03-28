@@ -30,11 +30,16 @@ let playerPoints = 0
 let cpuPoints = 0
 play.addEventListener("click", battle)
 
-//The beginning animation
-tl.to('header', { duration: 3, y: '-155%' }, 2)
-    .to('main', { duration: 0.5, opacity: 1 })
-    .set('header', {visibility:'hidden'});
+//The title screen animation.
+tl.set('body', {overflowY:'hidden'})
+    .to('header', {duration:0.5, y:20},2)
+    .to('header', { duration: 3, y: '-155%',ease: "power2"})
+    .to('main', { duration: 0.5, opacity: 1})
+    .set('header', {visibility:'hidden'})
+    .set('body', {overflowY:'auto'})
 
+
+//The neon animation.
 gsap.to('.pulse',
     {
         duration: 1.5,
