@@ -104,7 +104,7 @@ button:hover figcaption {
     z-index: 3;
     align-items: center;
     justify-content: space-around;
-    border:solid 2px white;
+ 
     width: 100%;
     overflow-x: hidden;
     margin:2%;
