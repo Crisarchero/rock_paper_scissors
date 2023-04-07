@@ -8,7 +8,7 @@ I created this game with HTML/CSS, JS and GSAP in about 8 hours.
 This project is just for me to practice.  No contributions, please!
 
 ## Acknowledgments
-All the sound effects are from https://pixabay.com/ . and don’t belong to me but are free to use.
+All the sound effects are from https://pixabay.com/ . They don’t belong to me, but are free to use.
 
 
 
